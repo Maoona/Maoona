@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link href="website.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id='ham'> 
+<header>
+<img src="pic/logo.png" alt="logo" class="logo"/>
+    <div class="container">
+      <nav>
+          <ul> 
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="works.html">Art Works</a></li>
+		  <li><a href="films.html">Camera films</a></li>
+		  <li><a href="Contact.html">Contect me :)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  </div>
+  
+  
+  <div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 6</div>
+		  <img src="pic/slide1.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 6</div>
+		  <img src="pic/slide2.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 6</div>
+		  <img src="pic/slide3.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 6</div>
+		  <img src="pic/slide4.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 6</div>
+		  <img src="pic/slide5.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 6</div>
+		  <img src="pic/slide6.jpg" style="width:100%">
+		  <div class="text">Some Of My Works</div>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		</div>
+<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+</script>
+
+<section>
+<u><h1>About Me</h1></u>
+Singapore, <b>an island city-state off southern Malaysia</b>, is a global financial center with a tropical climate and multicultural population. 
+Its colonial core centers on the Padang, a cricket field since the 1830s and now <b>flanked by grand buildings such as City Hall, with its 18 Corinthian columns.</b> 
+Singapore is know for its greenery thus the nickname “garden city”. In Singapore there are many things to do even though it is small, there are many tourist attraction sites 
+in Singapore. Such as the melion, Sentosa, our food etc... In this country we are socially diverse, regarding of race and religion, we highly take that into our morals. So please 
+respect us.
+</section>
+
+<br>                                                  <br>
+<article>
+<br>
+
+<article>
+
+<u><h2>What I do</h2></u>
+
+<div class="container1">
+  <a href="works.html"><img src="pic/food.png" alt="food" class="image1"></a>
+  <div class="middle1">
+    <div class="text1">3D</div>
+	click here for more
+  </div>
+</div>
+
+<div class="container1">
+  <a href="works.html"><img src="pic/arts.jpg" alt="arts" class="image1"></a>
+  <div class="middle1">
+    <div class="text1">2D</div>
+	click here for more
+  </div>
+</div>
+
+<div class="container1">
+  <a href="films.html"><img src="pic/shopping.png" alt="shopping" class="image1"></a>
+  <div class="middle1">
+    <div class="text1">Film</div>
+	click here for more
+  </div>
+</div>
+  
+   <div class="container1">
+  <a href="works.html"><img src="pic/po.jpg" alt="po" class="image1"></a>
+  <div class="middle1">
+    <div class="text1">Others</div>
+	click here for more
+  </div>
+  </div>
+  
+  </article>
+
+</body>
+</html>
